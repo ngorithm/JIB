@@ -1,26 +1,19 @@
 import turtle
-
-
 def setup(x, y):
     turtle.setx(x)
     turtle.sety(y)
     print(x, y)
-
-
 class Draw_Pikachu:
-
     def __init__(self):
         self.t = turtle.Turtle()
         t = self.t
         t.pensize(3)
         t.speed(9)
         t.ondrag(setup)
-
     def meme(self, x, y):
         self.t.penup()
         self.t.goto(x, y)
         self.t.pendown()
-
     def aankha1(self, x, y):
         self.meme(x, y)
         t = self.t
@@ -41,8 +34,7 @@ class Draw_Pikachu:
         t.begin_fill()
         t.circle(10)
         t.end_fill()
-
-    def aankha2(self, x, y):
+   def aankha2(self, x, y):
         self.meme(x, y)
         t = self.t
         t.seth(0)
@@ -536,7 +528,7 @@ def main():
     drawing = Draw_Pikachu()
     drawing.start()
     turtle.mainloop()
-
+#yay
 
 if __name__ == '__main__':
     main()
